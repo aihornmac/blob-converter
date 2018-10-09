@@ -1,0 +1,36 @@
+{
+  "name": "blob-converter",
+  "version": "1.0.0",
+  "description": "A tool to convert blob to arrayBuffer or string",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rm -rf lib && tsc --pretty -p src/tsconfig.json && rm -rf es && tsc --pretty -p src/tsconfig.es.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aihornmac/blob-converter.git"
+  },
+  "files": [
+    "lib",
+    "es"
+  ],
+  "keywords": [
+    "mobx",
+    "localstorage"
+  ],
+  "author": "Aihorn Mac",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aihornmac/blob-converter/issues"
+  },
+  "homepage": "https://github.com/aihornmac/blob-converter#readme",
+  "devDependencies": {
+    "@types/mocha": "^5.2.4",
+    "@types/node": "^10.3.1",
+    "mocha": "^3.2.0",
+    "tslint": "^5.10.0",
+    "tslint-eslint-rules": "^5.3.1",
+    "typescript": "^2.9.1"
+  }
+}
